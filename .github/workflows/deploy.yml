@@ -21,8 +21,15 @@ jobs:
       - name: Install dependencies
         run: npm ci --legacy-peer-deps
 
-      - name: Build
-        run: npm run build
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: Lint, Test, Build, E2E
+        run: npx nx run-many -t lint test build e2e
+
+      - name: Fix CI (if needed)
+        if: always()
+        run: npx nx fix-ci
 
       - name: Deploy to GitHub Pages
         env:
