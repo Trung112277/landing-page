@@ -66,4 +66,10 @@
   body {
     @apply bg-background text-foreground;
   }
+  .btn-primary {
+    @apply px-[32px] py-2 rounded-full font-black uppercase text-base italic transition-all duration-300 bg-primary text-primary-foreground hover:brightness-75;
+  }
+  .btn-outline {
+    @apply px-[32px] py-2 rounded-full font-black uppercase text-base italic transition-all duration-300 border border-primary text-foreground bg-transparent hover:brightness-75 ;
+  }
 }

@@ -1,5 +1,6 @@
 import { H1 } from '../common/heading/H1';
 import { LogoImage } from '../common/logo/Logo-image';
+import { AuthButtons } from '../feature/auth/Auth-buttons';
 import { NavMenuHeader } from '../feature/nav-menu/Nav-menu-header';
 
 export function Header() {
@@ -13,9 +14,7 @@ export function Header() {
         </H1>
         <NavMenuHeader />
       </div>
-      <div>
-
-      </div>
+      <AuthButtons />
     </header>
   );
 }
