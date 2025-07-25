@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "nx-mcp": {
+      "url": "http://localhost:9479/mcp"
+    }
+  }
+}
