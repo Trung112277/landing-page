@@ -1,5 +1,10 @@
+import { Header } from '../components/layout/Header';
+
 export function Home() {
-    return (
-        <h1>Welcome landing-page</h1>
-    );
+  return (
+    <>
+      <Header />
+      <h1>Welcome landing-page</h1>
+    </>
+  );
 }

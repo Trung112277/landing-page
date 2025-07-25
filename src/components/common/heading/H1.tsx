@@ -11,3 +11,4 @@ export function H1({ children, className = '', ...props }: H1Props) {
     </h1>
   );
 }
+  
