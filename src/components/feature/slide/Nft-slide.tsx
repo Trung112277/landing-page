@@ -27,20 +27,21 @@ export function NftSlide({
   visible = 1,
   imageClassName = '',
 }: NftSlideProps) {
+  const basis = visible === 1 ? 'basis-full' : `basis-1/${visible}`;
   return (
     <div>
-        <H2>{title}</H2>
+        <H2 className='line-clamp-1 pr-[100px]'>{title}</H2>
       <Carousel
         opts={{ align: 'start', loop: true }}
         className="w-full"
       >
         <CarouselContent>
           {data.map((item) => (
-            <CarouselItem key={item.id} className={`basis-1/${visible}`}>
+            <CarouselItem key={item.id} className={basis}>
               <img
                 src={`${import.meta.env.BASE_URL}${item.image}`}
                 alt={item.alt}
-                className={`rounded-xl w-full h-[245px] object-cover ${imageClassName}`}
+                className={`rounded-xl w-full  ${imageClassName}`}
                 draggable={false}
               />
             </CarouselItem>

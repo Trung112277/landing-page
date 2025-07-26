@@ -19,7 +19,7 @@ export function ServiceCardItem({
   return (
     <Link
       to={to}
-      className="flex flex-col items-center leading-5 font-medium text-sm justify-center gap-3 uppercase transition-all duration-300 hover:text-primary relative"
+      className="flex flex-col items-center leading-5 font-medium text-sm text-white justify-center gap-3 uppercase transition-all duration-300 hover:text-primary relative"
     >
       <div className="relative">
         <img src={`${import.meta.env.BASE_URL}${icon}`} alt={alt} />
