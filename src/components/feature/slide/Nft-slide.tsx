@@ -5,7 +5,6 @@ import {
   CarouselItem,
 } from '@/components/ui/carousel';
 import { NftNavigation } from './Nft-navigation';
-import Autoplay from 'embla-carousel-autoplay';
 import { H2 } from '@/components/common/heading/H2';
 
 export interface NftSlideItem {
@@ -27,28 +26,34 @@ export function NftSlide({
   visible = 1,
   imageClassName = '',
 }: NftSlideProps) {
-  const basis = visible === 1 ? 'basis-full' : `basis-1/${visible}`;
+  const width = visible === 1 ? '100%' : `${100 / visible}%`;
+  
   return (
-    <div>
-        <H2 className='line-clamp-1 pr-[100px]'>{title}</H2>
-      <Carousel
-        opts={{ align: 'start', loop: true }}
-        className="w-full"
-      >
+    <>
+      <H2 className="line-clamp-1 pr-[100px]">{title}</H2>
+      <Carousel opts={{ align: 'start', loop: true }} className="w-full">
         <CarouselContent>
           {data.map((item) => (
-            <CarouselItem key={item.id} className={basis}>
-              <img
-                src={`${import.meta.env.BASE_URL}${item.image}`}
-                alt={item.alt}
-                className={`rounded-xl w-full  ${imageClassName}`}
-                draggable={false}
-              />
+            <CarouselItem 
+              key={item.id} 
+              style={{ 
+                flex: `0 0 ${width}`, 
+                maxWidth: width 
+              }}
+            >
+              <div className="w-full">
+                <img
+                  src={`${import.meta.env.BASE_URL}${item.image}`}
+                  alt={item.alt}
+                  className={`rounded-xl w-full block ${imageClassName}`}
+                  draggable={false}
+                />
+              </div>
             </CarouselItem>
           ))}
         </CarouselContent>
         <NftNavigation />
       </Carousel>
-    </div>
+    </>
   );
 }
