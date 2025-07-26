@@ -72,4 +72,10 @@
   .btn-outline {
     @apply px-[32px] py-2 rounded-full font-black uppercase text-base italic transition-all duration-300 border border-primary text-foreground bg-transparent hover:brightness-75 ;
   }
+  
+}
+@media (min-width: 1176px) {
+  .container {
+      max-width: 1176px;
+  }
 }

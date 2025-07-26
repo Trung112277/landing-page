@@ -5,10 +5,10 @@ import { MainLayout } from '@/components/layout/Main-layout';
 export function App() {
   return (
     <Routes>
-    <Route element={<MainLayout />}>
-      <Route path="/" element={<Home />} />
-    </Route>
-  </Routes>
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Home />} />
+      </Route>
+    </Routes>
   );
 }
 

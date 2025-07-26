@@ -1,7 +1,8 @@
 import { H1 } from '../common/heading/H1';
 import { LogoImage } from '../common/logo/Logo-image';
 import { AuthButtons } from '../feature/auth/Auth-buttons';
-import { NavMenuHeader } from '../feature/nav-menu/Nav-menu-header';
+import { NavHeader } from '../feature/nav/Nav-header';
+import { NavigationProvider } from '../../context/NavigationContext';
 
 export function Header() {
   return (
@@ -12,7 +13,9 @@ export function Header() {
             <LogoImage />
           </a>
         </H1>
-        <NavMenuHeader />
+        <NavigationProvider>
+          <NavHeader />
+        </NavigationProvider>
       </div>
       <AuthButtons />
     </header>
