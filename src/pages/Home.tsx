@@ -1,5 +1,6 @@
 import { ServiceCardList } from '@/components/feature/nav/Service-card-List';
 import { HeroSlide } from '@/components/feature/slide/Hero-slide';
+import { NewNftSlide } from '@/components/feature/slide/New-nft-slide';
 
 export function Home() {
   return (
@@ -12,9 +13,8 @@ export function Home() {
         <ServiceCardList />
       </section>
       </div>
-    
       <section className="container mx-auto px-5 m-10">
-        New NFT Collections
+        <NewNftSlide />
       </section>
       <section className="container mx-auto px-5  mb-20 mt-10">
         NFT Drops Calendar
