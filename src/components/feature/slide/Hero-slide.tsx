@@ -1,59 +1,52 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-import { PaginationSlide } from './Pagination-slide';
-import { useHeroSlider } from '../../../hooks/useHeroSlider';
-import { useRef } from 'react';
-import type { Swiper as SwiperType } from 'swiper';
-
-import 'swiper/css';
+import React from 'react';
+import { HERO_SLIDES } from '../../../constant/hero-slides';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from '@/components/ui/carousel';
+import Autoplay from 'embla-carousel-autoplay';
+import { HeroPagination } from './Hero-pagination';
+import { useCarousel } from '../../../hooks/useCarousel';
 
 export function HeroSlide() {
-  const { currentSlide, totalSlides, slides, handleSlideChange } =
-    useHeroSlider();
-  
-  const swiperRef = useRef<SwiperType | null>(null);
-
-  const handlePaginationClick = (index: number) => {
-    if (swiperRef.current) {
-      swiperRef.current.slideTo(index);
-    }
-  };
+  const { api, setApi, current, handlePaginationClick, handleKeyDown } = useCarousel();
 
   return (
-    <div className="relative">
-      <Swiper 
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: true,
-        }}
-        modules={[Autoplay]} 
-        className="mySwiper"
-        onSlideChange={handleSlideChange}
-        initialSlide={currentSlide}
-        onSwiper={(swiper) => {
-          swiperRef.current = swiper;
-        }}
+      <Carousel
+        setApi={setApi}
+        opts={{ align: 'start', loop: true }}
+        plugins={[
+          Autoplay({
+            delay: 3000,
+            stopOnInteraction: false,
+            stopOnMouseEnter: true,
+          }),
+        ]}
+        className="w-full"
+        onKeyDownCapture={handleKeyDown}
       >
-        {slides.map((slide) => (
-          <SwiperSlide key={slide.id}>
-            <div className="relative w-full h-full">
-              <img
-                src={`${import.meta.env.BASE_URL}${slide.image}`}
-                alt={slide.alt}
-                className="w-full h-[450px]"
-              />
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
-        <PaginationSlide
-          totalSlides={totalSlides}
-          currentSlide={currentSlide}
-          onSlideChange={handlePaginationClick}
-          className=" backdrop-blur-sm px-4 py-2 rounded-full"
-        />
-      </div>
-    </div>
+        <CarouselContent className="-ml-0">
+          {HERO_SLIDES.map((slide) => (
+            <CarouselItem key={slide.id} className="pl-0">
+              <div className="relative w-full h-[450px] overflow-hidden rounded-xl">
+                <img
+                  src={`${import.meta.env.BASE_URL}${slide.image}`}
+                  alt={slide.alt}
+                  className="w-full h-full block"
+                  draggable={false}
+                  loading="lazy"
+                />
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <HeroPagination
+        total={HERO_SLIDES.length}
+        current={current}
+        onChange={handlePaginationClick}
+        className='absolute bottom-3 left-1/2 -translate-x-1/2'
+      />
+      </Carousel>
   );
 }
