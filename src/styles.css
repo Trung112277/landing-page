@@ -64,7 +64,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-custom;
   }
   .btn-primary {
     @apply px-[32px] py-2 rounded-full font-black uppercase text-base italic transition-all duration-300 bg-primary text-primary-foreground hover:brightness-75;
