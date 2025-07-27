@@ -1,82 +1,109 @@
-# LandingPage
+# ZTECH NFT Landing Page
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+![Logo](public/image/logo/logo.png)
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
+## 🚀 Giới thiệu
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/getting-started/tutorials/react-standalone-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+**ZTECH NFT Landing Page** là website giới thiệu. Giao diện hiện đại, hiển thị tốt trên cả máy tính và điện thoại.
 
-## Finish your CI setup
+---
 
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/VRRR8NftnR)
+## 🖼️ Hình ảnh thực tế
 
+### Giao diện Desktop
+![Desktop Screenshot 1](/screenshot/screenshot-desktop-1.png)
+![Desktop Screenshot 2](/screenshot/screenshot-desktop-2.png)
+![Desktop Screenshot 3](/screenshot/screenshot-desktop-3.png)
 
-## Run tasks
+### Giao diện Mobile
+![Mobile Screenshot 1](/screenshot/screenshot-mobile-1.png)
+![Mobile Screenshot 2](/screenshot/screenshot-mobile-2.png)
+![Mobile Screenshot 3](/screenshot/screenshot-mobile-3.png)
+![Mobile Screenshot 4](/screenshot/screenshot-mobile-4.png)
 
-To run the dev server for your app, use:
+---
 
-```sh
-npx nx serve landing-page
+## 🛠️ Công nghệ sử dụng
+
+- **Ngôn ngữ:** TypeScript, JavaScript
+- **Framework:** React 19, Vite
+- **UI:** Tailwind CSS, Radix UI, Lucide React
+- **State & Routing:** React Router DOM
+- **Build tool:** Nx Monorepo, Vite
+- **Lint & Format:** ESLint, Prettier
+- **Triển khai:** GitHub Pages (gh-pages)
+
+---
+
+## ⚙️ Chức năng chính
+
+- **Trang chủ hiện đại:**  
+  - Banner lớn, menu điều hướng, nút đăng ký/đăng nhập nổi bật.
+- **New NFT Collections:**  
+  - Hiển thị các bộ sưu tập NFT mới nhất với slider đẹp mắt.
+- **NFT Drops Calendar:**  
+  - Lịch các sự kiện NFT, giúp người dùng không bỏ lỡ các đợt phát hành.
+- **Hot NFT & Promotion:**  
+  - Khu vực NFT nổi bật và các chương trình khuyến mãi.
+- **Responsive:**  
+  - Tối ưu hiển thị trên mọi thiết bị (desktop, tablet, mobile).
+- **Sidebar & Navigation:**  
+  - Sidebar cho mobile, menu điều hướng rõ ràng.
+- **Footer:**  
+  - Thông tin liên hệ, sản phẩm, tài nguyên, chính sách.
+
+---
+
+## 📂 Cấu trúc thư mục
+
+```
+src/
+  app/         // Cấu hình route, layout, khởi tạo ứng dụng
+  assets/      // Tài nguyên tĩnh: fonts, hình ảnh dùng chung
+  components/  // Các component giao diện (chia nhỏ theo common, feature, layout, ui...)
+  constant/    // Các hằng số, dữ liệu tĩnh (menu, card, slide, ...)
+  context/     // React Context cho state toàn cục (ví dụ: NavigationContext)
+  hooks/       // Custom React hooks (usePageLoading, useResponsiveVisible, useCarousel...)
+  lib/         // Thư viện, hàm tiện ích dùng chung (utils...)
+  pages/       // Các trang chính của app (Home, ErrorPage...)
+  utils/       // Các hàm xử lý logic, tiện ích riêng biệt (errorUtils...)
+public/
+  image/       // Ảnh minh họa, logo, banner, NFT
+  screenshot/  // Ảnh chụp màn hình thực tế dự án
 ```
 
-To create a production bundle:
+---
 
-```sh
-npx nx build landing-page
-```
+## 📝 Hướng dẫn phát triển
 
-To see all available targets to run for a project, run:
+1. **Cài đặt:**
+   ```sh
+   npm install
+   ```
 
-```sh
-npx nx show project landing-page
-```
+2. **Chạy dev:**
+   ```sh
+   npm start
+   # hoặc
+   nx run landing-page:dev
+   ```
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+3. **Build production:**
+   ```sh
+   npm run build
+   ```
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+4. **Triển khai lên GitHub Pages:**
+   ```sh
+   npm run deploy
+   ```
 
-## Add new projects
+---
 
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
+## 📧 Liên hệ
 
-Use the plugin's generator to create new projects.
+- Email: nqnhattrung2001@gmail.com
+- Website: [https://Trung112277.github.io/landing-page](https://Trung112277.github.io/landing-page)
 
-To generate a new application, use:
+---
 
-```sh
-npx nx g @nx/react:app demo
-```
-
-To generate a new library, use:
-
-```sh
-npx nx g @nx/react:lib mylib
-```
-
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
-
-[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Install Nx Console
-
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
-
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
-
-Learn more:
-
-- [Learn more about this workspace setup](https://nx.dev/getting-started/tutorials/react-standalone-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
