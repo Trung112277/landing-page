@@ -11,15 +11,15 @@
 ## 🖼️ Hình ảnh thực tế
 
 ### Giao diện Desktop
-![Desktop Screenshot 1](/screenshot/screenshot-desktop-1.png)
-![Desktop Screenshot 2](/screenshot/screenshot-desktop-2.png)
-![Desktop Screenshot 3](/screenshot/screenshot-desktop-3.png)
+![Desktop Screenshot 1](public/image/screenshot/screenshot-desktop-1.png)
+![Desktop Screenshot 2](public/image/screenshot/screenshot-desktop-2.png)
+![Desktop Screenshot 3](public/image/screenshot/screenshot-desktop-3.png)
 
 ### Giao diện Mobile
-![Mobile Screenshot 1](/screenshot/screenshot-mobile-1.png)
-![Mobile Screenshot 2](/screenshot/screenshot-mobile-2.png)
-![Mobile Screenshot 3](/screenshot/screenshot-mobile-3.png)
-![Mobile Screenshot 4](/screenshot/screenshot-mobile-4.png)
+![Mobile Screenshot 1](public/image/screenshot/screenshot-mobile-1.png)
+![Mobile Screenshot 2](public/image/screenshot/screenshot-mobile-2.png)
+![Mobile Screenshot 3](public/image/screenshot/screenshot-mobile-3.png)
+![Mobile Screenshot 4](public/image/screenshot/screenshot-mobile-4.png)
 
 ---
 
@@ -32,25 +32,6 @@
 - **Build tool:** Nx Monorepo, Vite
 - **Lint & Format:** ESLint, Prettier
 - **Triển khai:** GitHub Pages (gh-pages)
-
----
-
-## ⚙️ Chức năng chính
-
-- **Trang chủ hiện đại:**  
-  - Banner lớn, menu điều hướng, nút đăng ký/đăng nhập nổi bật.
-- **New NFT Collections:**  
-  - Hiển thị các bộ sưu tập NFT mới nhất với slider đẹp mắt.
-- **NFT Drops Calendar:**  
-  - Lịch các sự kiện NFT, giúp người dùng không bỏ lỡ các đợt phát hành.
-- **Hot NFT & Promotion:**  
-  - Khu vực NFT nổi bật và các chương trình khuyến mãi.
-- **Responsive:**  
-  - Tối ưu hiển thị trên mọi thiết bị (desktop, tablet, mobile).
-- **Sidebar & Navigation:**  
-  - Sidebar cho mobile, menu điều hướng rõ ràng.
-- **Footer:**  
-  - Thông tin liên hệ, sản phẩm, tài nguyên, chính sách.
 
 ---
 
@@ -71,6 +52,25 @@ public/
   image/       // Ảnh minh họa, logo, banner, NFT
   screenshot/  // Ảnh chụp màn hình thực tế dự án
 ```
+
+---
+
+## ⚙️ Chức năng chính
+
+- **Trang chủ hiện đại:**  
+  - Banner lớn, menu điều hướng, nút đăng ký/đăng nhập nổi bật.
+- **New NFT Collections:**  
+  - Hiển thị các bộ sưu tập NFT mới nhất với slider đẹp mắt.
+- **NFT Drops Calendar:**  
+  - Lịch các sự kiện NFT, giúp người dùng không bỏ lỡ các đợt phát hành.
+- **Hot NFT & Promotion:**  
+  - Khu vực NFT nổi bật và các chương trình khuyến mãi.
+- **Responsive:**  
+  - Tối ưu hiển thị trên mọi thiết bị (desktop, tablet, mobile).
+- **Sidebar & Navigation:**  
+  - Sidebar cho mobile, menu điều hướng rõ ràng.
+- **Footer:**  
+  - Thông tin liên hệ, sản phẩm, tài nguyên, chính sách.
 
 ---
 
