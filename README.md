@@ -11,11 +11,13 @@
 ## 🖼️ Hình ảnh thực tế
 
 ### Giao diện Desktop
+
 ![Desktop Screenshot 1](public/screenshot/screenshot-desktop-1.png)
 ![Desktop Screenshot 2](public/screenshot/screenshot-desktop-2.png)
 ![Desktop Screenshot 3](public/screenshot/screenshot-desktop-3.png)
 
 ### Giao diện Mobile
+
 ![Mobile Screenshot 1](public/screenshot/screenshot-mobile-1.png)
 ![Mobile Screenshot 2](public/screenshot/screenshot-mobile-2.png)
 ![Mobile Screenshot 3](public/screenshot/screenshot-mobile-3.png)
@@ -57,19 +59,19 @@ public/
 
 ## ⚙️ Chức năng chính
 
-- **Trang chủ hiện đại:**  
+- **Trang chủ hiện đại:**
   - Banner lớn, menu điều hướng, nút đăng ký/đăng nhập nổi bật.
-- **New NFT Collections:**  
+- **New NFT Collections:**
   - Hiển thị các bộ sưu tập NFT mới nhất với slider đẹp mắt.
-- **NFT Drops Calendar:**  
+- **NFT Drops Calendar:**
   - Lịch các sự kiện NFT, giúp người dùng không bỏ lỡ các đợt phát hành.
-- **Hot NFT & Promotion:**  
+- **Hot NFT & Promotion:**
   - Khu vực NFT nổi bật và các chương trình khuyến mãi.
-- **Responsive:**  
+- **Responsive:**
   - Tối ưu hiển thị trên mọi thiết bị (desktop, tablet, mobile).
-- **Sidebar & Navigation:**  
+- **Sidebar & Navigation:**
   - Sidebar cho mobile, menu điều hướng rõ ràng.
-- **Footer:**  
+- **Footer:**
   - Thông tin liên hệ, sản phẩm, tài nguyên, chính sách.
 
 ---
@@ -77,11 +79,13 @@ public/
 ## 📝 Hướng dẫn phát triển
 
 1. **Cài đặt:**
+
    ```sh
    npm install
    ```
 
 2. **Chạy dev:**
+
    ```sh
    npm start
    # hoặc
@@ -89,9 +93,21 @@ public/
    ```
 
 3. **Build production:**
+
    ```sh
    npm run build
    ```
 
 4. **Triển khai lên GitHub Pages:**
+   ```sh
+   npm run deploy
    ```
+
+---
+
+## 📧 Liên hệ
+
+- Email: nqnhattrung2001@gmail.com
+- Website: [https://Trung112277.github.io/landing-page](https://Trung112277.github.io/landing-page)
+
+---
