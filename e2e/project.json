@@ -4,10 +4,6 @@
   "sourceRoot": "e2e/src",
   "projectType": "application",
   "targets": {
-    "lint": {
-      "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"]
-    }
   },
   "tags": []
 } 

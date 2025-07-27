@@ -58,11 +58,11 @@ export function NftSlide({
                 maxWidth: width 
               }}
             >
-              <div className="w-full">
+              <div className="w-full h-full">
                 <img
                   src={`${import.meta.env.BASE_URL}${item.image}`}
                   alt={item.alt}
-                  className={`rounded-xl w-full block ${imageClassName}`}
+                  className={`rounded-xl w-full sm:h-[102px] h-full block ${imageClassName}`}
                   draggable={false}
                 />
               </div>

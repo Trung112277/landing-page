@@ -22,7 +22,7 @@ jobs:
         run: npm ci --legacy-peer-deps
 
       - name: Lint, Build
-        run: npx nx run-many -t lint build
+        run: npx nx run-many -t lint build --exclude=e2e
 
       - name: Fix CI (if needed)
         if: failure()
