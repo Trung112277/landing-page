@@ -1,12 +1,17 @@
 import { useNavigation } from '../../../context/NavigationContext';
-import { NavMenuList } from './Nav-menu-list';
+import { NavList } from './Nav-list';
 
 export function NavHeader() {
   const { headerNav } = useNavigation();
+  
   return (
-    <div>
-      <NavMenuList navItems={headerNav} />
-    </div>
+    <nav>
+      <ul className="flex items-center">
+        <NavList 
+          navItems={headerNav}
+          itemClassName="w-[80px] h-[40px] content-center text-center uppercase font-medium hover:bg-accent hover:rounded-[100px]"
+        />
+      </ul>
+    </nav>
   );
 }
-  

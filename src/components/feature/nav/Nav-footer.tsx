@@ -5,13 +5,21 @@ import { Button } from '@/components/ui/button';
 
 export function NavFooter() {
   const { footerNav } = useNavigation();
-
+  
   return (
     <div className="grid grid-cols-4 gap-8">
       {footerNav.map((section, idx) => (
         <div key={idx} className="flex flex-col">
           <H5 className="mb-3">{section.title}</H5>
-          <NavList navItems={section.links} />
+          <nav>
+            <ul className="flex flex-col gap-2">
+              <NavList
+                navItems={section.links}
+                itemClassName=""
+                containerClassName="flex flex-col gap-2"
+              />
+            </ul>
+          </nav>
           {section.title === 'CONTACT US' && (
             <div className="mt-6">
               <Button

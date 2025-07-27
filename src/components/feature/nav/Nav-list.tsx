@@ -2,23 +2,25 @@ import { NavItem, NavItemProps } from './Nav-item';
 
 interface NavListProps {
   navItems: NavItemProps[];
-  className?: string;
-  ItemComponent?: React.ComponentType<NavItemProps>;
+  itemClassName?: string;
+  containerClassName?: string;
 }
 
-export function NavList({ 
-  navItems, 
-  className = "flex flex-col gap-2",
-  ItemComponent = NavItem 
+export function NavList({
+  navItems,
+  itemClassName,
+  containerClassName,
 }: NavListProps) {
   if (!navItems || navItems.length === 0) return null;
+
   return (
-    <nav>
-      <ul className={className}>
-        {navItems.map((item, idx) => (
-          <ItemComponent key={idx} {...item} />
-        ))}
-      </ul>
-    </nav>
+    <>
+      {' '}
+      {navItems.map((item, idx) => (
+        <li className={containerClassName}>
+          <NavItem key={idx} {...item} className={itemClassName} />
+        </li>
+      ))}
+    </>
   );
 }
