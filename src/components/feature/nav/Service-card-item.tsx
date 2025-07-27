@@ -19,14 +19,18 @@ export function ServiceCardItem({
   return (
     <Link
       to={to}
-      className="flex flex-col items-center leading-5 font-medium text-sm text-white justify-center gap-3 uppercase transition-all duration-300 hover:text-primary relative"
+      className="flex flex-col justify-start md:justify-center items-center text-center md:leading-5 w-[60px] h-[65px] md:w-auto leading-3 font-medium text-[10px] md:text-sm text-white  gap-3 uppercase transition-all duration-300 hover:text-primary relative"
     >
       <div className="relative">
-        <img src={`${import.meta.env.BASE_URL}${icon}`} alt={alt} />
+        <img
+          src={`${import.meta.env.BASE_URL}${icon}`}
+          alt={alt}
+          className="md:w-[42px] w-[28px] h-[28px] md:h-[42px]"
+        />
         {isNew && (
           <Badge
             variant="destructive"
-            className="px-[6px] py-[2px] text-[12px] leading-4 font-medium text-white hover:bg-unset absolute right-0 translate-x-1/2 top-0 -translate-y-1/2 rounded"
+            className="px-[3px] md:px-[6px] py-[1px] md:py-[2px] md:text-xs text-[5px] leading-[8px] md:leading-4 font-medium text-white hover:bg-unset absolute right-0 translate-x-1/2 top-0 -translate-y-1/2 rounded"
           >
             new
           </Badge>

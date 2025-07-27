@@ -17,11 +17,9 @@ export function HeroPagination({
         <button
           key={idx}
           onClick={() => onChange(idx)}
-          className={`w-7 h-1 rounded-full transition-all duration-300
+          className={`h-1 w-4 md:w-7 rounded-full
               ${
-                idx === current
-                  ? 'bg-primary'
-                  : 'bg-white/60 hover:bg-white/80'
+                idx === current ? 'bg-primary' : 'bg-white/60 hover:bg-white/80'
               }
             `}
           aria-label={`Go to slide ${idx + 1}`}

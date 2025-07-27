@@ -13,7 +13,7 @@ export function PromoCard({ title, image, alt }: PromoCardProps) {
       <img
         src={`${import.meta.env.BASE_URL}${image}`}
         alt={alt}
-        className="rounded-xl block w-full h-[240px] object-cover"
+        className="rounded-xl block w-full h-[167px] md:h-[240px] object-cover"
       />
     </div>
   );

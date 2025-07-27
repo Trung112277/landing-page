@@ -5,9 +5,9 @@ import { Button } from '@/components/ui/button';
 
 export function NavFooter() {
   const { footerNav } = useNavigation();
-  
+
   return (
-    <div className="grid grid-cols-4 gap-8">
+    <div className="grid md:grid-cols-4 grid-cols-2 md:gap-8 gap-x-4 gap-y-6">
       {footerNav.map((section, idx) => (
         <div key={idx} className="flex flex-col">
           <H5 className="mb-3">{section.title}</H5>

@@ -5,7 +5,7 @@ export function NavHeader() {
   const { headerNav } = useNavigation();
   
   return (
-    <nav className='hidden md:block'>
+    <nav className='hidden lg:block'>
       <ul className="flex items-center">
         <NavList 
           navItems={headerNav}

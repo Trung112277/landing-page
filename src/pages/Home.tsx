@@ -12,22 +12,22 @@ export function Home() {
         <HeroSlide />
       </section>
       <section className="bg-primary-foreground">
-        <div className="container mx-auto px-5 py-6">
+        <div className="container mx-auto md:px-5 md:py-6 px-0 py-4">
           <ServiceCardList />
         </div>
       </section>
-      <section className="container mx-auto px-5 pt-20 pb-10">
+      <section className="container mx-auto px-5 pt-10 md:pt-20 pb-5 md:pb-10">
         <NewNftSlide />
       </section>
-      <section className="container mx-auto px-5 pb-20 pt-10 flex gap-6 justify-between">
-        <div className="max-w-[600px]">
+      <section className="container mx-auto px-5 pb-10 md:pb-20 pt-5 md:pt-10 flex flex-col lg:flex-row gap-10 lg:gap-6 justify-between">
+        <div className="lg:max-w-[600px] max-w-full">
           <NftDropsCalendarSlide />
         </div>
-        <div className="flex gap-6 justify-between">
-          <div className="w-[240px]">
+        <div className="flex gap-4 lg:gap-6 justify-between">
+          <div className="lg:w-[240px] w-1/2">
             <HotNftCard />
           </div>
-          <div className="w-[240px]">
+          <div className="lg:w-[240px] w-1/2">
             <PromotionCard />
           </div>
         </div>

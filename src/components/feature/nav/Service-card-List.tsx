@@ -4,7 +4,7 @@ import { ServiceCardItem } from './Service-card-item';
 export function ServiceCardList() {
   return (
     <nav>
-      <ul className="flex items-center justify-between gap-3">
+      <ul className="flex items-center justify-between gap-0 md:gap-3">
         {SERVICE_CARDS.map((item, index) => (
           <li key={index}>
             <ServiceCardItem 

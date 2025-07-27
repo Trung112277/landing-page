@@ -13,8 +13,8 @@ export function Header() {
 
   return (
     <>
-      <header className="px-5 md:px-10 py-3 md:py-5 flex justify-between items-center h-[60px] md:h-[80px] z-50 bg-background fixed top-0 w-full">
-        <div className="flex items-center gap-4 md:gap-6">
+      <header className="px-5 lg:px-10 py-3 md:py-5 flex justify-between items-center h-[60px] md:h-[80px] z-50 bg-background fixed top-0 w-full">
+        <div className="flex items-center gap-4 lg:gap-6">
           <SidebarButton 
             isOpen={isSidebarOpen} 
             onToggle={setIsSidebarOpen} 

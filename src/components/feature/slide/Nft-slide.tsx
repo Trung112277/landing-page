@@ -30,7 +30,7 @@ export function NftSlide({
   
   return (
     <>
-      <H2 className="line-clamp-1 pr-[100px]">{title}</H2>
+      <H2 className=" md:pr-[100px] pr-[75px]">{title}</H2>
       <Carousel opts={{ align: 'start', loop: true }} className="w-full">
         <CarouselContent>
           {data.map((item) => (
