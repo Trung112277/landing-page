@@ -9,7 +9,7 @@
     "build": "nx build",
     "test": "nx test",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist/landing-page"
+    "deploy": "gh-pages -d dist/landing-page -b gh-pages -u \"github-actions[bot] <github-actions[bot]@users.noreply.github.com>\" --repo=https://$GH_TOKEN@github.com/Trung112277/landing-page.git"
   },
   "nx": {
     "includedScripts": []
