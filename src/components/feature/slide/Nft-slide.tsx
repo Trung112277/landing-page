@@ -6,6 +6,7 @@ import {
 } from '@/components/ui/carousel';
 import { NftNavigation } from './Nft-navigation';
 import { H2 } from '@/components/common/heading/H2';
+import { useResponsiveVisible } from '@/hooks/useResponsiveVisible';
 
 export interface NftSlideItem {
   id: string;
@@ -17,16 +18,32 @@ interface NftSlideProps {
   data: NftSlideItem[];
   title?: string;
   visible: number;
+  visiblemb?: number; 
+  visiblemd?: number; 
+  visiblelg?: number; 
+  visiblexl?: number; 
   imageClassName?: string;
 }
 
 export function NftSlide({
   data,
   title = '',
-  visible = 1,
+  visible,
+  visiblemb,
+  visiblemd,
+  visiblelg,
+  visiblexl,
   imageClassName = '',
 }: NftSlideProps) {
-  const width = visible === 1 ? '100%' : `${100 / visible}%`;
+  const currentVisible = useResponsiveVisible({
+    visible,
+    visiblemb,
+    visiblemd,
+    visiblelg,
+    visiblexl,
+  });
+
+  const width = currentVisible === 1 ? '100%' : `${100 / currentVisible}%`;
   
   return (
     <>

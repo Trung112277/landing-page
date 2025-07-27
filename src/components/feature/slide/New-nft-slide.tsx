@@ -9,6 +9,10 @@ export function NewNftSlide() {
       data={nftData}
       title="New NFT Collections"
       visible={6}
+      visiblemb={1}
+      visiblemd={3}
+      visiblelg={4}
+      visiblexl={6}
       imageClassName="h-[245px] object-cover"
     />
   );
