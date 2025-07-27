@@ -10,7 +10,7 @@ export function App() {
 
   return (
     <>
-      <Suspense fallback={<LoadingScreen isLoading={true} key={loadingKey} />}>
+      <Suspense fallback={<LoadingScreen isLoading={true} loadingKey={loadingKey} />}>
         <Routes>
           <Route element={<MainLayout />}>
             {routes.map((route) => (
@@ -23,7 +23,7 @@ export function App() {
           </Route>
         </Routes>
       </Suspense>
-      <LoadingScreen isLoading={isLoading} key={loadingKey} />
+      <LoadingScreen isLoading={isLoading} loadingKey={loadingKey} />
     </>
   );
 }

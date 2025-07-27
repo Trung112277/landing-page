@@ -2,15 +2,15 @@ import React from 'react';
 
 interface LoadingProps {
   isLoading: boolean;
-  key?: number;
+  loadingKey?: number;
 }
 
-export const LoadingScreen: React.FC<LoadingProps> = ({ isLoading, key }) => {
+export const LoadingScreen: React.FC<LoadingProps> = ({ isLoading, loadingKey }) => {
   if (!isLoading) return null;
 
   return (
     <div
-      key={key}
+      key={loadingKey}
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm animate-in fade-in duration-200"
     >
       <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
