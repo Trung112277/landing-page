@@ -11,15 +11,15 @@
 ## 🖼️ Hình ảnh thực tế
 
 ### Giao diện Desktop
-![Desktop Screenshot 1](public/image/screenshot/screenshot-desktop-1.png)
-![Desktop Screenshot 2](public/image/screenshot/screenshot-desktop-2.png)
-![Desktop Screenshot 3](public/image/screenshot/screenshot-desktop-3.png)
+![Desktop Screenshot 1](public/screenshot/screenshot-desktop-1.png)
+![Desktop Screenshot 2](public/screenshot/screenshot-desktop-2.png)
+![Desktop Screenshot 3](public/screenshot/screenshot-desktop-3.png)
 
 ### Giao diện Mobile
-![Mobile Screenshot 1](public/image/screenshot/screenshot-mobile-1.png)
-![Mobile Screenshot 2](public/image/screenshot/screenshot-mobile-2.png)
-![Mobile Screenshot 3](public/image/screenshot/screenshot-mobile-3.png)
-![Mobile Screenshot 4](public/image/screenshot/screenshot-mobile-4.png)
+![Mobile Screenshot 1](public/screenshot/screenshot-mobile-1.png)
+![Mobile Screenshot 2](public/screenshot/screenshot-mobile-2.png)
+![Mobile Screenshot 3](public/screenshot/screenshot-mobile-3.png)
+![Mobile Screenshot 4](public/screenshot/screenshot-mobile-4.png)
 
 ---
 
@@ -94,16 +94,4 @@ public/
    ```
 
 4. **Triển khai lên GitHub Pages:**
-   ```sh
-   npm run deploy
    ```
-
----
-
-## 📧 Liên hệ
-
-- Email: nqnhattrung2001@gmail.com
-- Website: [https://Trung112277.github.io/landing-page](https://Trung112277.github.io/landing-page)
-
----
-
