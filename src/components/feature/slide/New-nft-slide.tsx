@@ -12,7 +12,7 @@ export function NewNftSlide() {
       visiblemb={3}
       visiblelg={4}
       visiblexl={6}
-      imageClassName="h-[245px] object-cover"
+      imageClassName="md:h-[245px] object-cover h-[140px]"
     />
   );
 }

@@ -9,7 +9,7 @@ export function NftDropsCalendarSlide() {
       data={nftData}
       title="NFT Drops Calendar"
       visible={1}
-      imageClassName="h-[240px] object-fill"
+      imageClassName="md:h-[240px] object-fill h-[171px]"
     />
   );
 }
