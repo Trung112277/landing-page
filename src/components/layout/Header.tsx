@@ -4,12 +4,16 @@ import { LogoImage } from '../common/logo/Logo-image';
 import { AuthButtons } from '../feature/auth/Auth-buttons';
 import { NavHeader } from '../feature/nav/Nav-header';
 import { NavigationProvider } from '../../context/NavigationContext';
-import { SidebarButton } from '../feature/button/Sidebar-button';
+import { SidebarButton } from '../feature/sidebar/Sidebar-button';
 import { Sidebar } from './Sidebar';
 import { NavSidebar } from '../feature/nav/Nav-sidebar';
 
 export function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const handleCloseSidebar = () => {
+    setIsSidebarOpen(false);
+  };
 
   return (
     <>
@@ -32,7 +36,7 @@ export function Header() {
           <AuthButtons />
         </div>
       </header>
-      <Sidebar isOpen={isSidebarOpen}>
+      <Sidebar isOpen={isSidebarOpen} onClose={handleCloseSidebar}>
           <NavigationProvider>
             <NavSidebar />
           </NavigationProvider>
