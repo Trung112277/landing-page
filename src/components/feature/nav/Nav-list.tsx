@@ -15,10 +15,9 @@ export function NavList({
 
   return (
     <>
-      {' '}
       {navItems.map((item, idx) => (
-        <li className={containerClassName}>
-          <NavItem key={idx} {...item} className={itemClassName} />
+        <li key={idx} className={containerClassName}>
+          <NavItem {...item} className={itemClassName} />
         </li>
       ))}
     </>

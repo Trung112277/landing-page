@@ -10,7 +10,7 @@ export function NavSidebar() {
         <NavList 
           navItems={headerNav} 
           itemClassName="w-full h-[48px] content-center text-center uppercase font-medium hover:bg-accent hover:rounded-[100px]"
-          containerClassName="flex flex-col gap-5"
+          containerClassName="flex flex-col gap-4"
         />
       </ul>
     </nav>
